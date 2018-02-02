@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.co.boonapp.janapp2018_test10.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/returnToSecondActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/performImplicit"
+            android:layout_below="@+id/performImplicit"
+            android:layout_marginTop="61dp"
+            android:text="Back to Main activity"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/performImplicit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerSelection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="154dp"
+            android:text="Perform Action from Spinner Selection" />
+
+        <Spinner
+            android:id="@+id/spinnerSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/actions"/>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
